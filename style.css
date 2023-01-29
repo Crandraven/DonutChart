@@ -1,0 +1,35 @@
+:root {
+  --pi: 3.14159265359;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 50%);
+}
+
+.donut-container {
+  position: relative;
+  background-color: white;
+}
+
+.donut-container svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.donut-container svg .donut-pie {
+  fill: none;
+  transform-origin: center center;
+}

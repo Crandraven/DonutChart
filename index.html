@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donut Graphique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="donutContainer"></div>
+</body>
+<script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript">
+    const donutContainer = document.querySelector('#donutContainer');
+    const data = [
+      {
+        'title': 'data1',
+        'color': 'red',
+        'qty': 18
+      },
+      {
+        'title': 'data3',
+        'color': 'green',
+        'qty': 6
+      },
+      {
+        'title': 'data2',
+        'color': 'blue',
+        'qty': 20
+      }
+    ]
+    createDonut(donutContainer, 500, data);
+  </script>
+</html>
